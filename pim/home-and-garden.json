@@ -1,0 +1,70 @@
+{
+    "id": "string",
+    "title": "string",
+    "description": "string",
+    "category": "Home & Garden",
+    "brand": "string",
+    "gtin": "string",
+    "mpn": "string",
+    "image_link": "string",
+    "additional_image_link": ["string"],
+    "condition": "string",
+    "availability": "string",
+    "price": {
+        "value": "string",
+        "currency": "string"
+    },
+    "sale_price": {
+        "value": "string",
+        "currency": "string",
+        "effective_date": "string"
+    },
+    "shipping": {
+        "country": "string",
+        "service": "string",
+        "price": "string"
+    },
+    "tax": {
+        "country": "string",
+        "region": "string",
+        "rate": "string",
+        "tax_ship": "string"
+    },
+    "adult": "boolean",
+    "multipack": "string",
+    "is_bundle": "boolean",
+    "energy_efficiency_class": "string",
+    "min_handling_time": "string",
+    "max_handling_time": "string",
+    "expiration_date": "string",
+    "material": "string",
+    "pattern": "string",
+    "size": "string",
+    "size_system": "string",
+    "color": "string",
+    "gender": "string",
+    "age_group": "string",
+    "custom_label_0": "string",
+    "custom_label_1": "string",
+    "custom_label_2": "string",
+    "custom_label_3": "string",
+    "custom_label_4": "string",
+    "product_type": "string",
+    "google_product_category": "Home & Garden > Decor",
+    "product_detail": {
+        "height": "string",
+        "width": "string",
+        "length": "string",
+        "weight": "string"
+    },
+    "google_product_review": {
+        "name": "string",
+        "date": "string",
+        "rating": "string",
+        "comments": "string"
+    },
+    "custom_attribute": {
+        "name": "string",
+        "value": "string"
+    }
+}

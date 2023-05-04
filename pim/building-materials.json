@@ -1,0 +1,81 @@
+{
+    "category": [
+      {
+        "id": "BuildingMaterials.Drywall",
+        "name": "Drywall"
+      },
+      {
+        "id": "BuildingMaterials.Ceilings",
+        "name": "Ceilings"
+      },
+      {
+        "id": "BuildingMaterials.Fencing",
+        "name": "Fencing"
+      },
+      {
+        "id": "BuildingMaterials.Windows",
+        "name": "Windows"
+      },
+      {
+        "id": "BuildingMaterials.Doors",
+        "name": "Doors"
+      },
+      {
+        "id": "BuildingMaterials.Roofing",
+        "name": "Roofing"
+      },
+      {
+        "id": "BuildingMaterials.WallPanels",
+        "name": "Wall Panels"
+      },
+      {
+        "id": "BuildingMaterials.Insulation",
+        "name": "Insulation"
+      },
+      {
+        "id": "BuildingMaterials.Flooring",
+        "name": "Flooring"
+      },
+      {
+        "id": "BuildingMaterials.Tile",
+        "name": "Tile"
+      },
+      {
+        "id": "BuildingMaterials.Masonry",
+        "name": "Masonry"
+      },
+      {
+        "id": "BuildingMaterials.Concrete",
+        "name": "Concrete"
+      },
+      {
+        "id": "BuildingMaterials.Stucco",
+        "name": "Stucco"
+      },
+      {
+        "id": "BuildingMaterials.Paint",
+        "name": "Paint"
+      },
+      {
+        "id": "BuildingMaterials.Lumber",
+        "name": "Lumber"
+      },
+      {
+        "id": "BuildingMaterials.HVAC",
+        "name": "HVAC"
+      },
+      {
+        "id": "BuildingMaterials.Plumbing",
+        "name": "Plumbing"
+      },
+      {
+        "id": "BuildingMaterials.Electrical",
+        "name": "Electrical"
+      },
+      {
+        "id": "BuildingMaterials.Siding",
+        "name": "Siding"
+      }
+    ]
+  }
+  

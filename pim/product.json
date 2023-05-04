@@ -1,0 +1,37 @@
+{
+    "id": "string",
+    "title": "string",
+    "description": "string",
+    "manufacturer": "string",
+    "brand": "string",
+    "part_number": "string",
+    "upc": "string",
+    "ean": "string",
+    "sku": "string",
+    "model": "string",
+    "color": "string",
+    "size": "string",
+    "dimension": {
+      "length": "number",
+      "width": "number",
+      "height": "number",
+      "weight": "number",
+      "unit": "string"
+    },
+    "shipping_weight": {
+      "value": "number",
+      "unit": "string"
+    },
+    "price": {
+      "value": "number",
+      "currency": "string"
+    },
+    "availability": "string",
+    "condition": "string",
+    "url": "string",
+    "image_url": "string",
+    "categories": [
+      "string"
+    ]
+  }
+  

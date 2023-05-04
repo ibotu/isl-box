@@ -1,0 +1,53 @@
+{
+    "asin": "string",
+    "title": "string",
+    "description": "string",
+    "category": "string",
+    "brand": "string",
+    "manufacturer": "string",
+    "part_number": "string",
+    "model": "string",
+    "upc": "string",
+    "ean": "string",
+    "dimensions": {
+        "height": "string",
+        "width": "string",
+        "length": "string",
+        "weight": "string"
+    },
+    "images": [
+        {
+            "url": "string",
+            "width": "integer",
+            "height": "integer"
+        }
+    ],
+    "features": ["string"],
+    "price": {
+        "value": "number",
+        "currency": "string"
+    },
+    "reviews": {
+        "rating": "number",
+        "count": "integer"
+    },
+    "availability": {
+        "is_available": "boolean",
+        "message": "string"
+    },
+    "related_products": [
+        {
+            "asin": "string",
+            "title": "string",
+            "price": {
+                "value": "number",
+                "currency": "string"
+            },
+            "image_url": "string"
+        }
+    ],
+    "custom_attributes": {
+        "name": "string",
+        "value": "string"
+    }
+}
