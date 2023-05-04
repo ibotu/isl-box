@@ -1,0 +1,35 @@
+#include "VNC2.h"
+
+#define INPUT_PORT 1   // Input USB port number
+#define OUTPUT_PORT 2  // Output USB port number
+
+void main(void)
+{
+    // Initialize the VNC2 chip and its USB host interface
+    VNC2_Init();
+    VNC2_USBHost_Init();
+
+    while(1)
+    {
+        // Wait for a USB input device to be connected to the input port
+        while(!VNC2_USBHost_DeviceConnected(INPUT_PORT)) {}
+
+        // Check if the connected device is a HID device
+        if(VNC2_USBHost_IsHIDDevice(INPUT_PORT))
+        {
+            // Loop until the input device is disconnected
+            while(VNC2_USBHost_DeviceConnected(INPUT_PORT))
+            {
+                // Read the next HID report from the input device
+                uint8_t report[64];
+                uint32_t report_len = VNC2_USBHost_ReadHIDReport(INPUT_PORT, report, sizeof(report));
+
+                // Send the report to the output port
+                VNC2_USBHost_WriteHIDReport(OUTPUT_PORT, report, report_len);
+            }
+        }
+
+        // Disconnect the input device and wait for the next device to be connected
+        VNC2_USBHost_DisconnectDevice(INPUT_PORT);
+    }
+}
