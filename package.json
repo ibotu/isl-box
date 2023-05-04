@@ -1,0 +1,13 @@
+{
+  "name": "mybox-app",
+  "version": "1.0.0",
+  "description": "A Node.js application for MyBox",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.0.0"
+  }
+}
