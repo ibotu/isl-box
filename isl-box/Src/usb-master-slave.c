@@ -1,4 +1,4 @@
-#include "../inc/vnc2.h"
+#include "VNC2.h"
 #include "uart.h"  // Include UART library
 
 #define INPUT_PORT 1   // Input USB port number (for the scanner)
