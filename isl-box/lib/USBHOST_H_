@@ -1,0 +1,60 @@
+#ifndef USBHOST_H_
+#define USBHOST_H_
+
+#include "stdint.h"
+
+// Define the USB Host endpoint structure
+typedef struct {
+    uint8_t address;
+    uint8_t endpoint_number;
+    uint8_t endpoint_type;
+    uint16_t max_packet_size;
+} usbhost_endpoint_t;
+
+// Define the USB Host transfer type constants
+typedef enum {
+    USBHOST_TRANSFER_TYPE_CONTROL,
+    USBHOST_TRANSFER_TYPE_INTERRUPT,
+    USBHOST_TRANSFER_TYPE_BULK,
+    USBHOST_TRANSFER_TYPE_ISOCHRONOUS
+} usbhost_transfer_type_t;
+
+// Define the USB Host transfer direction constants
+typedef enum {
+    USBHOST_TRANSFER_DIRECTION_OUT,
+    USBHOST_TRANSFER_DIRECTION_IN
+} usbhost_transfer_direction_t;
+
+// Define the USB Host transfer status constants
+typedef enum {
+    USBHOST_TRANSFER_STATUS_COMPLETED,
+    USBHOST_TRANSFER_STATUS_ERROR,
+    USBHOST_TRANSFER_STATUS_TIMED_OUT,
+    USBHOST_TRANSFER_STATUS_CANCELLED
+} usbhost_transfer_status_t;
+
+// Initialize the USB Host library
+void usbhost_init(void);
+
+// Register a callback function for USB enumeration events
+void usbhost_register_enumeration_callback(void (*func)(void));
+
+// Register a callback function for USB transfer events
+void usbhost_register_transfer_callback(void (*func)(usbhost_transfer_status_t));
+
+// Check if a USB device is connected
+uint8_t usbhost_device_connected(void);
+
+// Enumerate a USB device and its endpoints
+void usbhost_enumerate_device(void);
+
+// Open a USB endpoint for data transfer
+uint8_t usbhost_open_endpoint(usbhost_endpoint_t endpoint, usbhost_transfer_type_t type, usbhost_transfer_direction_t direction);
+
+// Close a USB endpoint
+void usbhost_close_endpoint(uint8_t endpoint_id);
+
+// Perform a USB data transfer on an open endpoint
+uint8_t usbhost_transfer_data(uint8_t endpoint_id, uint8_t *data, uint16_t length);
+
+#endif /* USBHOST_H_ */
